@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Basic page info -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M-kvartal</title>
+
+    <!-- CSS includes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./src/scss/jquery-ui.theme.min.css"> -->
+    <link rel="stylesheet" href="dist/css/style.css">
+
+</head>
+
+<body>
+
+    <main class="main">
+        <section class="preview">
+            <div class="preview__wrapper wrapper">
+                <h1 class="preview__title">покупателям</h1>
+            </div>
+        </section>
+        <section class="selection">
+            <header class="selection__header">
+                <div class="wrapper selection__header-wrapper">
+                    <h2 class="selection__header-title">Услуга «Подбор недвижимости»</h2>
+                </div>
+            </header>
+            <div class="selection-content">
+                <div class="wrapper selection-content__wrapper">
+                    <p class="selection-content__txt">Планируете купить недвижимость, но не знаете с чего начать?</p>
+                    <p class="selection-content__txt">Устали тратить время на неподходящие объекты?</p>
+                    <h3 class="selection-content__title">Как мы работаем</h3>
+                    <div class="selection-content__card-block">
+                        <div class="col">
+                            <div class="selection-content__card card">
+                                <span class="selection-content__card-count card__count">1.</span>
+                                <p class="selection-content__card-title">Начало работы — оценка Ваших потребностей</p>
+                                <p class="selection-content__card-txt">Мы выясняем, какие параметры квартиры для Вас принципиальны, а какие - обсуждаемы.</p>
+                            </div>
+                            <div class="selection-content__card card">
+                                <span class="selection-content__card-count card__count">3.</span>
+                                <p class="selection-content__card-title">Сначала — изучение документов, потом — просмотр</p>
+                                <p class="selection-content__card-txt">Мы ведем Вас на объект, только когда сами убедимся, что он юридически чист.</p>
+                            </div>
+                            <div class="selection-content__card selection-content__card--translucent card">
+                                <span class="selection-content__card-count card__count">5.</span>
+                                <p class="selection-content__card-title">Помощь в подборе и одобрении ипотечной программы</p>
+                                <p class="selection-content__card-txt">Мы подберем для Вас кредитный продукт с учетом Ваших финансовых возможностей. И его одобрят с бо’льшей вероятностью, чем если бы Вы обращались в банк сами.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="selection-content__card card">
+                                <span class="selection-content__card-count card__count">2.</span>
+                                <p class="selection-content__card-title">Поиск объекта по заданным параметрам</p>
+                                <p class="selection-content__card-txt">Мы сразу отфильтровываем варианты, которые Вас не устроят.</p>
+                            </div>
+                            <div class="selection-content__card card">
+                                <span class="selection-content__card-count card__count">4.</span>
+                                <p class="selection-content__card-title">Совместный просмотр объекта с экспертом</p>
+                                <p class="selection-content__card-txt">Мы не оставим Вас одного перед трудным выбором. На просмотр Вы пойдете вместе с экспертом, который выскажет свое мнение об объекте.</p>
+                            </div>
+                            <div class="selection-content__card card translucent">
+                                <span class="selection-content__card-count card__count">6.</span>
+                                <p class="selection-content__card-title">Юридическое сопровождение сделки</p>
+                                <p class="selection-content__card-txt">После окончательной проверки чистоты объекта мы подготавливаем все документы к сделке. И сопровождаем Вас полностью до момента подписания Вами акта приема-передачи объекта.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selection-content__plant">
+                    <img src="./src/img/selection-bg-plant.png" alt="plant">
+                </div>
+                <div class="selection-content__women">
+                    <img src="./src/img/selection-bg-women.png" alt="women">
+                    <div>
+                        <span>Диана Кузьмина</span>
+                        <p>Эксперт по продаже недвижимости</p>
+                    </div>
+                </div>
+            </div>
+            <footer class="selection-footer">
+                <div class="selection-footer__wrapper wrapper">
+                    <h2 class="selection-footer__title">Заявка на услугу <br /> «Подбор недвижимости»</h2>
+                    <p class="selection-footer__subtitle">Поможем улучшить Ваши жилищные условия</p>
+                    <form action="" class="selection-form selection-footer__form">
+                        <span class="selection-form__title">Укажите параметры</span>
+                        <div class="row">
+                            <div class="col">
+                                <label class="selection-form__label">
+                                    <span>Город</span>
+                                    <input class="buyer-input selection-form__input" type="text">
+                                </label>
+                                <label class="selection-form__label">
+                                    <span>Количество комнат</span>
+                                    <input class="buyer-input selection-form__input--sm" type="text">
+                                </label>
+                            </div>
+                            <div class="col">
+                                <label class="selection-form__label">
+                                    <span>Площадь</span>
+                                    <div id="area-range" class="selection-form__range">
+                                        <p class="selection-form__range-value">35 м<sup>2</sup></p>
+                                    </div>
+                                </label>
+                                <label class="selection-form__label">
+                                    <span>Цена</span>
+                                    <div id="price-range" class="selection-form__range">
+                                        <p class="selection-form__range-value">4 000 000</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label class="selection-form__label">
+                                    <span>Ваше имя</span>
+                                    <input class="buyer-input selection-form__input" type="text">
+                                </label>
+                                <label class="selection-form__label">
+                                    <span>Телефон</span>
+                                    <input class="buyer-input selection-form__input" type="text">
+                                </label>
+                            </div>
+                            <div class="col">
+                                <p class="selection-form__txt">АВТО-МОНИТОРИНГ новых объектов по Вашим критериям на всех площадках! <b>— Бесплатно</b></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col d-media-none"></div>
+                            <button class="selection-form__submit primary-btn">отправить</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </footer>
+        </section>
+        <section class="monitoring">
+            <div class="monitoring__wrapper wrapper">
+                <header class="monitoring-header monitoring__header">
+                    <h2 class="monitoring-header__title">АВТО-МОНИТОРИНГ новых объектов по Вашим критериям на всех площадках!</h2>
+                    <p class="monitoring-header__txt">В «Квартал-М» работает специальный авто-мониторинг новых объектов недвижимости. Как только новый объект появится на любой популярной площадке-агрегаторе (Циан, Яндекс.Недвижимость, Авито.Недвижимость), мы сообщим Вам в течении 30 минут об этом на электронную почту.</p>
+                </header>
+                <div class="monitoring-content monitoring__content">
+                    <div class="monitoring-content__card card">
+                        <span class="monitoring-content__card-count card__count">1.</span>
+                        <p class="monitoring-content__card-title">Расскажите нам об объекте для поиска: любая геолокация, диапазон цен, площадь, кол-во комнат.</p>
+                    </div>
+                    <div class="monitoring-content__card card">
+                        <span class="monitoring-content__card-count card__count">1.</span>
+                        <p class="monitoring-content__card-title">Расскажите нам об объекте для поиска: любая геолокация, диапазон цен, площадь, кол-во комнат.</p>
+                    </div>
+                    <div class="monitoring-content__card card">
+                        <span class="monitoring-content__card-count card__count">1.</span>
+                        <p class="monitoring-content__card-title">Расскажите нам об объекте для поиска: любая геолокация, диапазон цен, площадь, кол-во комнат.</p>
+                    </div>
+                </div>
+                <footer class="monitoring-footer monitoring__footer">
+                    <button class="monitoring-footer__btn primary-btn">подключить</button>
+                    <div class="monitoring-footer__txt-block">
+                        <p class="monitoring-footer__price">Стоимость: 2000 ₽*</p>
+                        <p class="monitoring-footer__txt">*Бесплатно в рамках услуг: «Подбор недвижимости», «Дисконт»</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <section class="discount">
+            <div class="discount__wrapper wrapper">
+                <div class="discount-intro">
+                    <h2 class="discount-intro__title">Услуга «Дисконт»</h2>
+                    <p class="discount-intro__txt">Выбрали квартиру, и хотите купить ее со скидкой, но при этом, не умеете торговаться?</p>
+                    <div class="discount-intro__txt">Мы сделаем это за вас!</div>
+                    <h3 class="discount-intro__subtitle">Наши агенты профи в области торга!</h3>
+                </div>
+                <div class="discount-content">
+                    <p class="discount-content__preview-txt">Как мы работаем</p>
+                    <div class="discount__card-block">
+                        <div class="discount__card">
+                            <div class="round-card">
+                                1.
+                                <div class="round-card__line">
+                                    <svg width="103" height="12" viewBox="0 0 103 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M102.53 6.53033C102.823 6.23744 102.823 5.76256 102.53 5.46967L97.7574 0.696699C97.4645 0.403806 96.9896 0.403806 96.6967 0.696699C96.4038 0.989593 96.4038 1.46447 96.6967 1.75736L100.939 6L96.6967 10.2426C96.4038 10.5355 96.4038 11.0104 96.6967 11.3033C96.9896 11.5962 97.4645 11.5962 97.7574 11.3033L102.53 6.53033ZM0 6.75H102V5.25H0V6.75Z" fill="#366A8F"/>
+                                    </svg>    
+                                </div>
+                            </div>
+                            <p class="discount__card-txt">Вы оставляете заявку с рассматриваемым объектом.</p>
+                        </div>
+                        <div class="discount__card">
+                            <div class="round-card">
+                                2.
+                                <div class="round-card__line">
+                                    <svg width="103" height="12" viewBox="0 0 103 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M102.53 6.53033C102.823 6.23744 102.823 5.76256 102.53 5.46967L97.7574 0.696699C97.4645 0.403806 96.9896 0.403806 96.6967 0.696699C96.4038 0.989593 96.4038 1.46447 96.6967 1.75736L100.939 6L96.6967 10.2426C96.4038 10.5355 96.4038 11.0104 96.6967 11.3033C96.9896 11.5962 97.4645 11.5962 97.7574 11.3033L102.53 6.53033ZM0 6.75H102V5.25H0V6.75Z" fill="#366A8F"/>
+                                    </svg>    
+                                </div>
+                            </div>
+                            <p class="discount__card-txt">Мы проводим анализ рынка, конкурентов и проданные похожие объекты. Определяем коррекность выставленной цены собственником.</p>
+                        </div>
+                        <div class="discount__card">
+                            <div class="round-card">
+                                3.
+                                <div class="round-card__line">
+                                    <svg width="103" height="12" viewBox="0 0 103 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M102.53 6.53033C102.823 6.23744 102.823 5.76256 102.53 5.46967L97.7574 0.696699C97.4645 0.403806 96.9896 0.403806 96.6967 0.696699C96.4038 0.989593 96.4038 1.46447 96.6967 1.75736L100.939 6L96.6967 10.2426C96.4038 10.5355 96.4038 11.0104 96.6967 11.3033C96.9896 11.5962 97.4645 11.5962 97.7574 11.3033L102.53 6.53033ZM0 6.75H102V5.25H0V6.75Z" fill="#366A8F"/>
+                                    </svg>    
+                                </div>
+                            </div>
+                            <p class="discount__card-txt">Агент проводит переговоры с продавцом.</p>
+                        </div>
+                        <div class="discount__card">
+                            <div class="round-card">
+                                4.
+                            </div>
+                            <p class="discount__card-txt">Переговоры заканчиваются снижением цены.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="discount-footer">
+                <div class="discount-footer__wrapper wrapper">
+                    <h3 class="discount-footer__title">Оставьте заявку на услугу «Дисконт». Мы проверим стоимость объекта.</h3>
+                    <form action="" class="discount-form discount-footer__form">
+                        <div class="row">
+                            <label class="discount-form__label">
+                                <span>Ссылка на объект</span>
+                                <input class="buyer-input" type="text" placeholder="Https://">
+                            </label>
+                            <label class="discount-form__label">
+                                <span>Ваше имя</span>
+                                <input class="buyer-input" type="text" placeholder="Виталий">
+                            </label>
+                            <label class="discount-form__label">
+                                <span>Номер телефона</span>
+                                <input class="buyer-input" type="text" placeholder="+7 (123) 456-78-90">
+                            </label>
+                        </div>
+                        <button class="discount-form__btn primary-btn">отправить</button>
+                    </form>
+                </div>
+                <div class="discount-footer__bg">
+                    <img src="./src/img/discount-bg.png" alt="">
+                </div>  
+            </div>
+        </section>
+        <section class="support">
+            <div class="support__wrapper wrapper">
+                <div class="support__intro">
+                    <h2 class="support__intro-title">Услуга «Юридическое сопровождение»</h2>
+                    <p class="support__intro-txt">Выбрали квартиру, но остались сомнения?</p>
+                    <p class="support__intro-txt">Мы поможем безопасно купить недвижимость. Проверим объект на юридическую «чистоту». Полное сопровождение до подписания акта приёма передачи объекта.</p>
+                    <h3 class="support__intro-subtitle">Безопасность - самое важное!</h3>
+                </div>
+                <div class="support-content">
+                    <p class="support-content__preview-txt">Как мы работаем</p>
+                    <div class="support__card-block">
+                        <div class="support__card">
+                            <div class="round-card">
+                                1.
+                                <div class="round-card__line">
+                                    <svg width="103" height="12" viewBox="0 0 103 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M102.53 6.53033C102.823 6.23744 102.823 5.76256 102.53 5.46967L97.7574 0.696699C97.4645 0.403806 96.9896 0.403806 96.6967 0.696699C96.4038 0.989593 96.4038 1.46447 96.6967 1.75736L100.939 6L96.6967 10.2426C96.4038 10.5355 96.4038 11.0104 96.6967 11.3033C96.9896 11.5962 97.4645 11.5962 97.7574 11.3033L102.53 6.53033ZM0 6.75H102V5.25H0V6.75Z" fill="#366A8F"/>
+                                    </svg>    
+                                </div>
+                            </div>
+                            <p class="support__card-txt">Вы оставляете заявку с рассматриваемым объектом.</p>
+                        </div>
+                        <div class="support__card">
+                            <div class="round-card">
+                                2.
+                                <div class="round-card__line">
+                                    <svg width="103" height="12" viewBox="0 0 103 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M102.53 6.53033C102.823 6.23744 102.823 5.76256 102.53 5.46967L97.7574 0.696699C97.4645 0.403806 96.9896 0.403806 96.6967 0.696699C96.4038 0.989593 96.4038 1.46447 96.6967 1.75736L100.939 6L96.6967 10.2426C96.4038 10.5355 96.4038 11.0104 96.6967 11.3033C96.9896 11.5962 97.4645 11.5962 97.7574 11.3033L102.53 6.53033ZM0 6.75H102V5.25H0V6.75Z" fill="#366A8F"/>
+                                    </svg>    
+                                </div>
+                            </div>
+                            <p class="support__card-txt">Мы проводим юридическую экспертизу и делаем экспертное заключение.</p>
+                        </div>
+                        <div class="support__card">
+                            <div class="round-card">
+                                3.
+                                <div class="round-card__line">
+                                    <svg width="103" height="12" viewBox="0 0 103 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M102.53 6.53033C102.823 6.23744 102.823 5.76256 102.53 5.46967L97.7574 0.696699C97.4645 0.403806 96.9896 0.403806 96.6967 0.696699C96.4038 0.989593 96.4038 1.46447 96.6967 1.75736L100.939 6L96.6967 10.2426C96.4038 10.5355 96.4038 11.0104 96.6967 11.3033C96.9896 11.5962 97.4645 11.5962 97.7574 11.3033L102.53 6.53033ZM0 6.75H102V5.25H0V6.75Z" fill="#366A8F"/>
+                                    </svg>    
+                                </div>
+                            </div>
+                            <p class="support__card-txt">Присылаем Вам выводы за один день с момента обращения к нам.</p>
+                        </div>
+                        <div class="support__card">
+                            <div class="round-card">
+                                4.
+                            </div>
+                            <p class="support__card-txt">После окончательной проверки чистоты объекта, мы подготавливаем все документы к сделке. И сопровождаем Вас полностью до момента подписания Вами акта приема-передачи объекта.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="support__footer support-footer">
+                <div class="wrapper">
+                    <h3 class="support-footer__title">Обезопасьте себя от рисков. Доверьте проверку и сделку экспертам «Квартал-М»</h2>
+                        <form action="" class="support-form support-footer__form">
+                            <div class="row">
+                                <label class="support-form__label">
+                                    <span>Ссылка на объект</span>
+                                    <input class="buyer-input" type="text" placeholder="Https://">
+                                </label>
+                                <label class="support-form__label">
+                                    <span>Ваше имя</span>
+                                    <input class="buyer-input" type="text" placeholder="Виталий">
+                                </label>
+                                <label class="support-form__label">
+                                    <span>Номер телефона</span>
+                                    <input class="buyer-input" type="text" placeholder="+7 (123) 456-78-90">
+                                </label>
+                            </div>
+                            <button class="support-form__btn primary-btn">отправить</button>
+                        </form>
+                </div>
+                <div class="support-bg">
+                    <img src="./src/img/support-bg.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__wrapper wrapper">
+                <div class="advantages__card advantages-card">
+                    <div class="advantages-card__img-block">
+                        <img src="./src/img/advantages-1.svg" alt="" class="advantages__card-img">
+                    </div>
+                    <div class="advantages-card__content-block">
+                        <p class="advantages__card-txt">«Квартал-М» аккредитованное агентство в системе ДомКлик от Сбербанка по г. Фрязино.</p>
+                        <a class="advantages__card-link">подробнее</a>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <div class="advantages-card__img-block">
+                        <img src="./src/img/advantages-2.png" alt="" class="advantages__card-img">
+                    </div>
+                    <div class="advantages-card__content-block">
+                        <p class="advantages__card-txt">«Лучшая брокерская компания малых городов России» и «Лучшая брокерская компания на рынке недвижимости Московской области»</p>
+                        <a class="advantages__card-link">подробнее</a>
+                    </div>
+                </div>
+                <div class="advantages__card">
+                    <div class="advantages-card__img-block">
+                        <img src="./src/img/advantages-3.svg" alt="" class="advantages__card-img">
+                    </div>
+                    <div class="advantages-card__content-block">
+                        <p class="advantages__card-txt">«Квартал-М» Сертифицированная брокерская компания. Входит в состав Российской Гильдии Риэлторов</p>
+                        <a class="advantages__card-link">подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript includes -->
+    <script src="dist/js/app.js"></script>
+</body>
+
+</html>
